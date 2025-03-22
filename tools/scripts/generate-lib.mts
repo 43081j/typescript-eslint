@@ -13,7 +13,6 @@ import { FlatESLint } from '@typescript-eslint/utils/ts-eslint';
 import fs from 'node:fs';
 import path from 'node:path';
 import prettier from 'prettier';
-import { rimraf } from 'rimraf';
 import ts from 'typescript';
 
 import {
@@ -125,7 +124,10 @@ function getReferences(
 
 async function main(): Promise<void> {
   try {
-    rimraf.sync(OUTPUT_FOLDER);
+    fs.rmSync(OUTPUT_FOLDER, {
+      force: true,
+      recursive: true,
+    });
   } catch {
     // ignored
   }

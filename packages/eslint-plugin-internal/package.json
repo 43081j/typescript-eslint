@@ -16,7 +16,7 @@
   "scripts": {
     "build": "npx tsc -b tsconfig.build.json",
     "clean": "npx tsc -b tsconfig.build.json --clean",
-    "postclean": "rimraf dist/ coverage/",
+    "postclean": "premove dist/ coverage/",
     "format": "prettier --write \"./**/*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,css}\" --ignore-path ../../.prettierignore",
     "lint": "npx nx lint",
     "test": "vitest --run --config=$INIT_CWD/vitest.config.mts",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^3.0.8",
-    "rimraf": "*",
+    "premove": "^4.0.0",
     "vitest": "^3.0.8"
   }
 }

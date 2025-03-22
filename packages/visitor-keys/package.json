@@ -41,7 +41,7 @@
     "build": "tsc -b tsconfig.build.json",
     "postbuild": "downlevel-dts dist _ts4.3/dist --to=4.3",
     "clean": "tsc -b tsconfig.build.json --clean",
-    "postclean": "rimraf dist && rimraf _ts3.4 && rimraf _ts4.3 && rimraf coverage",
+    "postclean": "premove dist _ts3.4 _ts4.3 coverage",
     "format": "prettier --write \"./**/*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,css}\" --ignore-path ../../.prettierignore",
     "lint": "npx nx lint",
     "test": "jest",
@@ -55,8 +55,8 @@
     "@jest/types": "29.6.3",
     "downlevel-dts": "*",
     "jest": "29.7.0",
+    "premove": "^4.0.0",
     "prettier": "^3.2.5",
-    "rimraf": "*",
     "typescript": "*"
   },
   "funding": {

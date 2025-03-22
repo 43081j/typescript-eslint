@@ -4,7 +4,6 @@ import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import prettier from 'prettier';
-import { rimraf } from 'rimraf';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const BASE_HOST = 'https://www.staging-typescript.org';
@@ -83,7 +82,10 @@ async function main(): Promise<void> {
   const vendor = path.join(__dirname, '..', 'src', 'vendor');
 
   console.log('Cleaning...');
-  await rimraf(vendor);
+  await fs.rm(vendor, {
+    force: true,
+    recursive: true,
+  });
   await makeDir(vendor);
 
   // TS-VFS

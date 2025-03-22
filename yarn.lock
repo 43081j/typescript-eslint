@@ -6057,8 +6057,8 @@ __metadata:
     "@typescript-eslint/type-utils": "workspace:*"
     "@typescript-eslint/utils": "workspace:*"
     "@vitest/coverage-v8": ^3.0.8
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     vitest: ^3.0.8
   languageName: unknown
   linkType: soft
@@ -6093,8 +6093,8 @@ __metadata:
     mdast-util-mdx: ^3.0.0
     micromark-extension-mdxjs: ^3.0.0
     natural-compare: ^1.4.0
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     title-case: ^3.0.3
     ts-api-utils: ^2.0.1
     tsx: "*"
@@ -6132,8 +6132,8 @@ __metadata:
     downlevel-dts: "*"
     glob: "*"
     jest: 29.7.0
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     typescript: "*"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
@@ -6171,6 +6171,7 @@ __metadata:
     json-stable-stringify-without-jsonify: ^1.0.1
     lodash.merge: 4.6.2
     mocha: ^10.4.0
+    rimraf: "*"
     semver: ^7.6.0
     sinon: ^16.1.3
     source-map-support: ^0.5.21
@@ -6194,6 +6195,7 @@ __metadata:
     make-dir: "*"
     prettier: ^3.2.5
     pretty-format: "*"
+    rimraf: "*"
     typescript: "*"
   languageName: unknown
   linkType: soft
@@ -6210,8 +6212,8 @@ __metadata:
     debug: ^4.3.4
     downlevel-dts: "*"
     jest: 29.7.0
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     ts-api-utils: ^2.0.1
     typescript: "*"
   peerDependencies:
@@ -6225,8 +6227,8 @@ __metadata:
   resolution: "@typescript-eslint/types@workspace:packages/types"
   dependencies:
     downlevel-dts: "*"
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     tsx: "*"
     typescript: "*"
   languageName: unknown
@@ -6303,9 +6305,9 @@ __metadata:
     markdownlint-cli: ^0.44.0
     ncp: ^2.0.0
     nx: 20.4.5
+    premove: 4.0.0
     prettier: 3.5.0
     pretty-format: ^29.7.0
-    rimraf: ^5.0.5
     semver: 7.7.0
     tmp: ^0.2.1
     tsx: "*"
@@ -6330,8 +6332,8 @@ __metadata:
     is-glob: ^4.0.3
     jest: 29.7.0
     minimatch: ^9.0.4
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     semver: ^7.6.0
     tmp: "*"
     ts-api-utils: ^2.0.1
@@ -6351,8 +6353,8 @@ __metadata:
     "@typescript-eslint/typescript-estree": 8.27.0
     downlevel-dts: "*"
     jest: 29.7.0
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     typescript: "*"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
@@ -6369,8 +6371,8 @@ __metadata:
     downlevel-dts: "*"
     eslint-visitor-keys: ^4.2.0
     jest: 29.7.0
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     typescript: "*"
   languageName: unknown
   linkType: soft
@@ -17382,6 +17384,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"premove@npm:4.0.0, premove@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "premove@npm:4.0.0"
+  bin:
+    premove: bin.js
+  checksum: 6eed8d81f81672d34f72d56d38ca1b39910cf68bfab16d3304c38670daa68b548de3701ff671411311f0e80c079a72aef906068ab18239d7fbb7448312425148
+  languageName: node
+  linkType: hard
+
 "prettier@npm:3.5.0":
   version: 3.5.0
   resolution: "prettier@npm:3.5.0"
@@ -18424,7 +18435,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:*, rimraf@npm:^5.0.5":
+"rimraf@npm:*":
   version: 5.0.7
   resolution: "rimraf@npm:5.0.7"
   dependencies:
@@ -20434,8 +20445,8 @@ __metadata:
     "@typescript-eslint/utils": 8.27.0
     downlevel-dts: "*"
     jest: 29.7.0
+    premove: ^4.0.0
     prettier: ^3.2.5
-    rimraf: "*"
     typescript: "*"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
@@ -21273,7 +21284,6 @@ __metadata:
     react-dom: ^18.2.0
     react-markdown: ^9.0.1
     react-resizable-panels: ^0.0.63
-    rimraf: "*"
     semver: ^7.6.0
     stylelint: ^16.3.1
     stylelint-config-recommended: ^14.0.0

@@ -59,6 +59,7 @@
     "make-dir": "*",
     "prettier": "^3.2.5",
     "pretty-format": "*",
+    "rimraf": "*",
     "typescript": "*"
   },
   "funding": {
